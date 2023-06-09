@@ -13,15 +13,9 @@ const path = __dirname;
  * 0 -> worse quality
  */
 const compress = async (inputFile, quality) => {
-  sharp(inputFile)
+  await sharp([path, 'input.jpeg'].join('/'))
     .jpeg({ quality: quality })
     .toFile([path, 'output.jpeg'].join('/'))
-    .then(() => {
-      console.log('Image resized successfully!');
-    })
-    .catch((error) => {
-      console.error('Error resizing image:', error);
-    });
 };
 
-compress([path, 'input.jpeg'].join('/'), 60)
+compress('input.jpeg', 60)

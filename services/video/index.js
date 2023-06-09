@@ -1,5 +1,5 @@
-const { createFFmpeg, fetchFile } = require('@ffmpeg.wasm/main');
 const { writeFile } = require('fs/promises');
+const { createFFmpeg, fetchFile } = require('@ffmpeg.wasm/main');
 
 const path = __dirname;
 const ffmpeg = createFFmpeg({ log: true });
