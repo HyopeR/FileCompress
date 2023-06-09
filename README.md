@@ -9,4 +9,4 @@ Vary it according to your use case.
 
 # Usage
 **1-** `npm install`</br>
-**2-** `npm run image` or `npm run sound` or `npm run sound`
+**2-** `npm run image` or `npm run sound` or `npm run video`
