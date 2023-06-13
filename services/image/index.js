@@ -13,7 +13,7 @@ const path = __dirname;
  * 0 -> worse quality
  */
 const compress = async (inputFile, quality) => {
-  await sharp([path, 'input.jpeg'].join('/'))
+  await sharp([path, inputFile].join('/'))
     .jpeg({ quality: quality })
     .toFile([path, 'output.jpeg'].join('/'))
 };

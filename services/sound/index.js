@@ -16,7 +16,7 @@ const ffmpeg = createFFmpeg({ log: true });
  */
 const compress = async (inputFile, quality) => {
   await ffmpeg.load();
-  await ffmpeg.FS('writeFile', 'input.mp3', await fetchFile([path, inputFile].join('/')));
+  await ffmpeg.FS('writeFile', inputFile, await fetchFile([path, inputFile].join('/')));
   await ffmpeg.run(
     '-i',
     inputFile,
