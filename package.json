@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "image": "node ./services/image/index.js",
-    "sound": "node --experimental-wasm-threads ./services/sound/index.js",
-    "video": "node --experimental-wasm-threads ./services/video/index.js"
+    "sound": "node ./services/sound/index.js",
+    "video": "node ./services/video/index.js"
   },
   "author": "",
   "license": "ISC",
